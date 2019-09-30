@@ -1,122 +1,176 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+                <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+                <link rel="stylesheet" href="css/reset.css">
+                <link rel="stylesheet" href="css/reveal.css">
+                <link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+                <!-- Theme used for syntax highlighting of code -->
+                <link rel="stylesheet" href="lib/css/monokai.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-			    <section>
-				<h1>Introduction to Git (and GitHub)</h1>
-			    </section>
-			    <section>
-				<h2>Forking a repository on GitHub</h2>
-			    </section>
-			    <section>
-				<h2>Creating a local clone</h2>
-			    </section>
-			    <section>
-				<h2>Viewing the log</h2>
-			    </section>
-			    <section>
-				<h2>Viewing status</h2>
-			    </section>
-			    <section>
-				<h2>Viewing differences</h2>
-			    </section>
-			    <section>
-				<h2>Staging a change</h2>
-			    </section>
-			    <section>
-				<h2>Committing a change</h2>
-			    </section>
-			    <section>
-				<h2>Pushing a change</h2>
-			    </section>
-			    <section>
-				<h2>Pulling changes</h2>
-			    </section>
-			    <section>
-				<h2>Creating a branch</h2>
-			    </section>
-			    <section>
-				<h2>Pushing a branch</h2>
-			    </section>
-			    <section>
-				<h2>Creating a pull request on GitHub</h2>
-			    </section>
-			    <section>
-				<h2>Merging a pull request on GitHub</h2>
-			    </section>
-			    <section>
-				<h2>Adding a remote repository</h2>
-			    </section>
-			    <section>
-				<h2>Fetching changes from a remote</h2>
-			    </section>
-			    <section>
-				<h2>Checking out a remote branch</h2>
-			    </section>
-			    <section>
-				<h2>Rebasing a branch</h2>
-			    </section>
-			    <section>
-				<h2>Merging a branch</h2>
-			    </section>
-			    <section>
-				<h2>Deleting a branch</h2>
-			    </section>
-			    <section>
-				<h2>GitHub work flow</h2>
-			    </section>
-			    <section>
-				<h2>Creating a tag</h2>
-			    </section>
-			    <section>
-				<h2>Viewing tags</h2>
-			    </section>
-			    <section>
-				<h2>Comparison between Git and MKS</h2>
-			    </section>
-			    <section>
-				<h2>Where to find this presentation</h2>
-			    </section>
-			</div>
-		</div>
+                <!-- Printing and PDF exports -->
+                <script>
+                        var link = document.createElement( 'link' );
+                        link.rel = 'stylesheet';
+                        link.type = 'text/css';
+                        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+                        document.getElementsByTagName( 'head' )[0].appendChild( link );
+                </script>
+        </head>
+        <body>
+                <div class="reveal">
+                        <div class="slides">
+                            <section>
+                                <h1>Introduction to Git (and GitHub)</h1>
+                            </section>
+                            <section>
+                                <h2>Forking a repository on GitHub</h2>
+                                <ol>
+                                    <li>Create an account on github.com</li>
+                                    <li>Fork this repository: https://github.com/jvalleroy/reveal.js</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Creating a local clone</h2>
+                                <ol>
+                                    <li>git clone https://github.com/username/reveal.js.git</li>
+                                    <li>cd reveal.js</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Staging a change</h2>
+                                <ol>
+                                    <li>Edit index.html in text editor</li>
+                                    <li>git add index.html</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Committing a change</h2>
+                                <ol>
+                                    <li>git commit -m "Change slide text"</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Viewing status</h2>
+                                <ol>
+                                    <li>git status</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Viewing the log</h2>
+                                <ol>
+                                    <li>git log</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Viewing differences</h2>
+                                <ol>
+                                    <li>git diff origin/git-training</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Pushing a change</h2>
+                                <ol>
+                                    <li>git push origin/git-training</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Pulling changes</h2>
+                                <ol>
+                                    <li>git pull origin/git-training</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Creating a branch</h2>
+                                <ol>
+                                    <li>git checkout -b fix-spelling-errors</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Pushing a branch</h2>
+                                <ol>
+                                    <li>git push origin/fix-spelling-errors</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Creating a pull request on GitHub</h2>
+                            </section>
+                            <section>
+                                <h2>Merging a pull request on GitHub</h2>
+                            </section>
+                            <section>
+                                <h2>Adding a remote repository</h2>
+                                <ol>
+                                    <li>git remote add upstream https://github.com/hakimel/reveal.js.git</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Fetching changes from a remote</h2>
+                                <ol>
+                                    <li>git fetch upstream</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Checking out a remote branch</h2>
+                                <ol>
+                                    <li>git checkout -b upstream-master upstream/master</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Rebasing a branch</h2>
+                                <ol>
+                                    <li>git rebase upstream-master</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Merging a branch</h2>
+                                <ol>
+                                    <li>git merge upstream-master</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Deleting a branch</h2>
+                                <ol>
+                                    <li>git branch -D upstream-master</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>GitHub work flow</h2>
+                            </section>
+                            <section>
+                                <h2>Creating a tag</h2>
+                            </section>
+                            <section>
+                                <h2>Viewing tags</h2>
+                            </section>
+                            <section>
+                                <h2>Comparison between Git and MKS</h2>
+                            </section>
+                            <section>
+                                <h2>Where to find this presentation</h2>
+                            </section>
+                        </div>
+                </div>
 
-		<script src="js/reveal.js"></script>
+                <script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+                <script>
+                        // More info about config & dependencies:
+                        // - https://github.com/hakimel/reveal.js#configuration
+                        // - https://github.com/hakimel/reveal.js#dependencies
+                        Reveal.initialize({
+                                dependencies: [
+                                        { src: 'plugin/markdown/marked.js' },
+                                        { src: 'plugin/markdown/markdown.js' },
+                                    { src: 'plugin/notes/notes.js', async: true },
+                                    { src: 'plugin/highlight/highlight.js', async: true }
+                                ]
+                        });
+                </script>
+        </body>
 </html>
