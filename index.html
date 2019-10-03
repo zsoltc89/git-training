@@ -29,23 +29,46 @@
                                 <h1>Introduction to Git (and GitHub)</h1>
                             </section>
                             <section>
+                                <h1>Prerequisites</h1>
+                                <ol>
+                                    <li>Download and install Git from:
+                                        <ul>
+                                            <li>
+                                                <a href="https://git-scm.com/download/win">
+                                                    https://git-scm.com/download/win</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>Run Git Bash</li>
+                                </ol>
+                            </section>
+                            <section>
                                 <h2>Forking a repository on GitHub</h2>
                                 <ol>
                                     <li>Create an account on github.com</li>
-                                    <li>Fork this repository: https://github.com/jvalleroy/reveal.js</li>
+                                    <li>Fork this repository:
+                                        <ul>
+                                            <li>
+                                                <a href="https://github.com/jvalleroy/git-training">
+                                                    https://github.com/jvalleroy/git-training</a>
+                                            </li>
+                                        </ul>
+                                    </li>
                                 </ol>
                             </section>
                             <section>
                                 <h2>Creating a local clone</h2>
                                 <ol>
-                                    <li>git clone https://github.com/username/reveal.js.git</li>
-                                    <li>cd reveal.js</li>
+                                    <li>git clone https://github.com/username/git-training.git</li>
+                                    <li>cd git-training</li>
                                 </ol>
                             </section>
                             <section>
                                 <h2>Staging a change</h2>
                                 <ol>
-                                    <li>Edit index.html in text editor</li>
+                                    <li>Open index.html in text editor.</li>
+                                    <li>Change the title of this presentation.</li>
+                                    <li>Save the modified file.</li>
                                     <li>git add index.html</li>
                                 </ol>
                             </section>
@@ -57,15 +80,19 @@
                             </section>
                             <section>
                                 <h2>Viewing status</h2>
-                                <ol>
+                                <ul>
                                     <li>git status</li>
-                                </ol>
+                                </ul>
+                                <br />
+                                <img src="git-status.png" />
                             </section>
                             <section>
                                 <h2>Viewing the log</h2>
-                                <ol>
+                                <ul>
                                     <li>git log</li>
-                                </ol>
+                                </ul>
+                                <br />
+                                <img src="git-log.png" />
                             </section>
                             <section>
                                 <h2>Viewing differences</h2>
@@ -77,12 +104,6 @@
                                 <h2>Pushing a change</h2>
                                 <ol>
                                     <li>git push origin/git-training</li>
-                                </ol>
-                            </section>
-                            <section>
-                                <h2>Pulling changes</h2>
-                                <ol>
-                                    <li>git pull origin/git-training</li>
                                 </ol>
                             </section>
                             <section>
@@ -113,6 +134,12 @@
                                 <h2>Fetching changes from a remote</h2>
                                 <ol>
                                     <li>git fetch upstream</li>
+                                </ol>
+                            </section>
+                            <section>
+                                <h2>Pulling changes</h2>
+                                <ol>
+                                    <li>git pull origin/git-training</li>
                                 </ol>
                             </section>
                             <section>
