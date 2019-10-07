@@ -26,7 +26,7 @@
                 <div class="reveal">
                         <div class="slides">
                             <section>
-                                <h1>Introduction to Git (and GitHub)</h1>
+                                <h1>Introduction</h1>
                             </section>
                             <section>
                                 <h1>Prerequisites</h1>
@@ -79,13 +79,12 @@
                                 </ol>
                             </section>
                             <section>
-                                <h2>Staging a change</h2>
+                                <h2>Changing a file</h2>
                                 <ol>
                                     <li>Open index.html in text editor.</li>
                                     <li>Change the title of this presentation.</li>
                                     <!-- TODO: Add screenshot of editing the file -->
                                     <li>Save the modified file.</li>
-                                    <li>git add index.html</li>
                                 </ol>
                             </section>
                             <section>
@@ -98,10 +97,20 @@
                             </section>
                             <section>
                                 <h2>Viewing local differences</h2>
-                                <ol>
+                                <ul>
                                     <li>git diff</li>
+                                </ul>
+                                <br />
+                                <img src="git-diff.png" />
+                            </section>
+                            <section>
+                                <h2>Staging a change</h2>
+                                <ol>
+                                    <li>git add index.html</li>
+                                    <li>git status</li>
                                 </ol>
-                                <!-- TODO: Add screenshot of local change -->
+                                <br />
+                                <img src="git-status-staged.png" />
                             </section>
                             <section>
                                 <h2>Viewing local staged differences</h2>
