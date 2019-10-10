@@ -231,10 +231,15 @@
                                 <img src="git-branch-delete.png" />
                             </section>
                             <section>
-                                <h2>Merging a pull request on GitHub</h2>
-                            </section>
-                            <section>
-                                <h2>GitHub work flow</h2>
+                                <h2>Merging a pull request</h2>
+                                <ol>
+                                    <li>git checkout master</li>
+                                    <li>git pull origin master</li>
+                                    <li>git remote add contributor-name https://github.com/contributor-name/reveal.js.git</li>
+                                    <li>git fetch contributor-name</li>
+                                    <li>git merge feature-branch</li>
+                                    <li>git push</li>
+                                </ol>
                             </section>
                             <section>
                                 <h2>Creating and viewing tags</h2>
@@ -246,7 +251,37 @@
                                 <img src="git-tag.png" />
                             </section>
                             <section>
-                                <h2>Comparison between Git and MKS</h2>
+                                <h2>Comparison to MKS</h2>
+                                <table>
+                                    <tr>
+                                        <th>MKS</th>
+                                        <th>Git</th>
+                                    </tr>
+                                    <tr>
+                                        <td>file-based</td>
+                                        <td>tree-based</td>
+                                    </tr>
+                                    <tr>
+                                        <td>development path</td>
+                                        <td>branch</td>
+                                    </tr>
+                                    <tr>
+                                        <td>checkpoint</td>
+                                        <td>tag</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Create Sandbox</td>
+                                        <td>git clone</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Check In</td>
+                                        <td>git commit -am</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Resynchronize</td>
+                                        <td>git pull</td>
+                                    </tr>
+                                </table>
                             </section>
                         </div>
                 </div>
